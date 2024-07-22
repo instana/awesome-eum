@@ -19,15 +19,9 @@ A collection of awesome things regarding Instana EUM.
   - [flutter-api-showcase](/flutter-api-showcase) - Example mobile application designed to showcase and test the capabilities of IBM Instana Flutter Agent and provide a comprehensive understanding of its functionality.
   - [android-crash](/android-crash) - Example mobile application designed to showcase crash collection using Instana Android Agent.
   - [android-crash-user-consent](/android-crash-user-consent) - Example mobile application designed to showcase crash collection using Instana Android Agent with user consent.
-  - [ios-api-showcase](/ios-api-showcase) - Example mobile application designed to showcase and test the capabilities of IBM Instana iOS Agent and provide a comprehensive understanding of its functionality.
-  - [android-otel-case-study](/android-otel-case-study) - An application designed for conducting a case study on the implementation of OpenTelemetry in the Android environment.
   - [android-compose-robotshop](/android-compose-robotshop) - A Shopping application clone with fakestore apis, Instrumented with instsna having version catelog based dependecy gradles. 
   Features : 
     - Calculate revenuew in a period of time with custom metric
     - Crash reporting
     - Capture network calls
     - Capture screen names 
-- Automation Testing
-  - [android-agent](/android-agent-test-automation) - Test Automation for android-agent using appium along with the test application to implement the same.
-  - [flutter-agent](/flutter-agent-test-automation) - Test application to implement the test automation using appium in flutter.
-  - [react-native-agent](/react-native-test-automation) - Test application to implement the test automation using appium in react-native.
