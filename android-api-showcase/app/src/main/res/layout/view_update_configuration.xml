@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/configuration_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/any_changes_here_require_app_restart_page_info"
+            android:textColor="@color/hint_text_color"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/update_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/update_key_url_title"
+            android:textColor="@color/base_text_color"
+            app:layout_constraintTop_toBottomOf="@+id/configuration_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/instana_key_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:hint="@string/key_hint_text"
+            app:layout_constraintTop_toBottomOf="@+id/update_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/instana_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button_base_color" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reporting_url_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:hint="@string/reporting_url_hint_text"
+            app:layout_constraintTop_toBottomOf="@+id/instana_key_layout"
+            tools:layout_editor_absoluteX="50dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reporting_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button_base_color" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/update_suspend_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="@string/update_suspension_type_title"
+            android:textColor="@color/base_text_color"
+            app:layout_constraintTop_toBottomOf="@+id/reporting_url_layout" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_suspension_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingHorizontal="35dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/update_suspend_title"
+            >
+
+            <RadioButton
+                android:id="@+id/low_battery_or_cellular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/low_battery_or_cellular_connection_radio_btn_text" />
+
+            <RadioButton
+                android:id="@+id/never"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/never_radio_btn_text" />
+
+            <RadioButton
+                android:id="@+id/low_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/low_battery_radio_btn_text" />
+
+            <RadioButton
+                android:id="@+id/cellular_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cellular_connection_radio_btn_text" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/collection_enable_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="@string/collection_enabled_title"
+            android:textColor="@color/base_text_color"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_suspension_type" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/collection_enabled_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="40dp"
+            app:thumbTint="@color/blue"
+            android:text="@string/collection_enable_switch_text"
+            app:layout_constraintTop_toBottomOf="@+id/collection_enable_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/crash_reporting_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="@string/enable_crash_reporting_title"
+            android:textColor="@color/base_text_color"
+            app:layout_constraintTop_toBottomOf="@+id/collection_enabled_switch" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/crash_reporting_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="40dp"
+            app:thumbTint="@color/blue"
+            android:text="@string/crash_reportingcrash_report_enable_switch_text"
+            app:layout_constraintTop_toBottomOf="@+id/crash_reporting_title" />
+
+        <Button
+            android:id="@+id/update_and_restart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="70dp"
+            android:backgroundTint="@color/button_base_color"
+            android:text="@string/save_and_restart_button_text"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crash_reporting_switch"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

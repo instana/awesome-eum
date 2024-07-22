@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+
+    {% seo %}
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style"
+        type="text/css" crossorigin> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/mydefault.css' | relative_url }}">
+    <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+</head>
+
+<body>
+    {% include header.html %}
+
+    <div class="container-xxl my-md-4 bd-layout">
+        <aside class="bd-sidebar">
+            <nav class="collapse bd-links">
+                {% include sidebar.html %}
+            </nav>
+        </aside>
+
+        <main id="content" class="main-content bd-main order-1" role="main"
+            style="padding: 0px !important; margin: 0px;">
+            <iframe name="contentframe" id="contentframe" class="content-iframe"
+                src="{{ '/docs/introduction/whatisit' | relative_url }}" frameborder="0">
+            </iframe>
+        </main>
+
+    </div>
+
+    <script src="{{ '/assets/js/sidebars.js' | relative_url }}"></script>
+</body>
+
+</html>

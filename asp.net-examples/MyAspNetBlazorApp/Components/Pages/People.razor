@@ -1,0 +1,98 @@
+﻿@page "/people"
+@attribute [StreamRendering]
+
+@using System.ComponentModel
+@using AntDesign.TableModels
+
+<PageTitle>People</PageTitle>
+
+<h1>People</h1>
+
+<p>This component demonstrates showing data.</p>
+
+<Table TItem="Character" DataSource="@_characters" Loading="_loading" OnRowClick="OnRowClick">
+    <PropertyColumn Property="c=>c.Name">
+        <a>@context.Name</a>
+    </PropertyColumn>
+    <PropertyColumn Property="c=>c.Age"></PropertyColumn>
+    <PropertyColumn Property="c=>c.Tags">
+        @foreach (var tag in context.Tags)
+        {
+            var color = tag.Length > 5 ? "geekblue" : "green";
+            if (tag == "hard to tell")
+            {
+                color = "volcano";
+            }
+            <Tag Color="@color">@tag</Tag>
+        }
+    </PropertyColumn>
+    <ActionColumn Title="Action">
+        <Space Size=@("middle")>
+        <SpaceItem>
+            <a>Invite @context.Name</a>
+        </SpaceItem>
+        <SpaceItem>
+            <a>Delete</a>
+        </SpaceItem>
+        </Space>
+    </ActionColumn>
+</Table>
+
+@code {
+    private Character[] _characters = Array.Empty<Character>();
+    private bool _loading = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _loading = true;
+        // Simulate asynchronous loading to demonstrate streaming rendering
+        await Task.Delay(900);
+
+        _characters = new Character[]
+        {
+            new()
+            {
+                Key = "1",
+                Name = "Peppa Pig",
+                Age = 32,
+                Tags = new[] {"nice", "developer"}
+            },
+            new()
+            {
+                Key = "2",
+                Name = "Danny Dog",
+                Age = 42,
+                Tags = new[] { "hard to tell"}
+            },
+            new()
+            {
+                Key = "3",
+                Name = "Zoë Zebra",
+                Age = 32,
+                Tags = new[] { "cool", "teacher" }
+            }
+        };
+        _loading = false;
+    }
+
+    public class Character
+    {
+        [DisplayName("Key")]
+        public string Key { get; set; }
+
+        [DisplayName("Age")]
+        public int Age { get; set; }
+
+        [DisplayName("Name")]
+        public string? Name { get; set; }
+
+        [DisplayName("Tags")]
+        public string[] Tags { get; set; }
+    }
+
+
+    void OnRowClick(RowData<Character> row)
+    {
+        Console.WriteLine($"row {row.Data.Name} was clicked.");
+    }
+}

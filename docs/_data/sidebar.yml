@@ -1,0 +1,55 @@
+- title: Introduction
+  id: introduction
+  child:
+  - title: About Awesome EUM 
+    id: whatisit
+  - title: Quick Links
+    id: install
+- title: Weasel Agent
+  id: weasel
+  child:
+  - title: Prerequisite
+    id: weasel-prereq
+  - title: Awesome Applications
+    id: awesome-weasel
+- title: Robotshop-Backend
+  id: backend
+  child:
+  - title: Prerequisite
+    id: backend-prereq
+  - title: Quick Start
+    id: be-quickstart  
+  - title: API Documentaion
+    id: documentation  
+- title: Android Agent
+  id: android
+  child:
+  - title: Prerequisite
+    id: android-prereq
+  - title: Awesome Applications
+    id: awesome-android
+- title: iOS Agent
+  id: ios
+  child: 
+  - title: Prerequisite
+    id: ios-prereq
+  - title: Awesome Applications
+    id: awesome-ios
+- title: Flutter Agent
+  id: flutter
+  child:
+  - title: Prerequisite
+    id: flutter-prereq
+  - title: Awesome Applications
+    id: awesome-flutter
+- title: React-Native Agent
+  id: rnative
+  child:
+  - title: Prerequisite
+    id: rn-prereq
+  - title: Awesome Applications
+    id: awesome-rn
+- title: About
+  id: about
+- title: FAQ / Stories
+  id: faq

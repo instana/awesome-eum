@@ -1,0 +1,22 @@
+## Directory-based project format:
+.idea/
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# VSCode
+.vscode
+
+# Mac OSX Finder file
+.DS_Store
+
+/.gradle
+
+.gradle
+
+.build
+
+/.build

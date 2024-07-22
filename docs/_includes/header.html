@@ -1,0 +1,15 @@
+<nav class="page-header navbar--fixed-top" role="banner">
+    <div class="navbar__inner">
+        <div class="navbar__items">
+            <div aria-label="Navigation bar toggle" class="navbar__toggle" tabindex="0">
+                <!-- <h4>{{ page.title | default: site.title | default: site.github.repository_name }}</h4> -->
+                <a href="{{ '/' | relative_url }}" class="navbar__item navbar__link">
+                    <h4>{{ site.title | default: site.github.repository_name }}</h4>
+                </a>
+            </div>
+            <div class="navbar__items navbar__items--right">
+                <a href="{{ site.github.repository_url }}" target="_blank" rel="noopener noreferrer"
+                    class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a>
+            </div>
+        </div>
+</nav>

@@ -1,0 +1,16 @@
+{
+  "name": "eum-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "lisr <lsrlibj@cn.ibm.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^2.3.0",
+    "lodash": "^4.17.21",
+    "zx": "^7.2.3"
+  },
+  "scripts": {
+    "dev": "node index.js"
+  }
+}

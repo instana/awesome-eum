@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <include
+            android:id="@+id/included_logo"
+            layout="@layout/logo_layout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/token_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/button_base_color"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/included_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/reporting_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/button_base_color"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/token_key" />
+
+        <Button
+            android:id="@+id/create_profile_data_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/button_base_color"
+            android:text="@string/create_user_data_btn_text"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintBottom_toTopOf="@+id/update_config_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reporting_url"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <Button
+            android:id="@+id/update_config_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="@color/button_base_color"
+            android:text="@string/update_configuration_btn_text"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintBottom_toTopOf="@+id/make_network_call_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_profile_data_btn" />
+
+        <Button
+            android:id="@+id/make_network_call_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="@color/button_base_color"
+            android:text="@string/make_network_call_btn_text"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintBottom_toTopOf="@+id/add_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_config_btn" />
+
+        <Button
+            android:id="@+id/add_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="@color/button_base_color"
+            android:text="@string/add_views_btn_text"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintBottom_toTopOf="@+id/create_crash_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/make_network_call_btn" />
+
+        <Button
+            android:id="@+id/create_custom_event_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="@color/button_base_color"
+            android:text="@string/create_custom_events_btn_text"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_crash_btn" />
+
+        <Button
+            android:id="@+id/create_crash_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="@color/button_base_color"
+            android:text="@string/create_crash_btn_text"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintBottom_toTopOf="@+id/create_custom_event_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_view" />
+
+        <Button
+            android:id="@+id/create_logs_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="@color/button_base_color"
+            android:text="@string/create_test_logs_btn_text"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintBottom_toTopOf="@+id/create_custom_event_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_crash_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

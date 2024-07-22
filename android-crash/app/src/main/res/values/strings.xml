@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Instana Example</string>
+    <string name="generate_crash">Generate Crash</string>
+    <string name="http_request">Http Request</string>
+</resources>

@@ -1,0 +1,50 @@
+PODS:
+  - Flutter (1.0.0)
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - GzipSwift (5.1.1)
+  - instana_agent (1.0.0):
+    - Flutter
+    - InstanaAgent (= 1.6.3)
+  - InstanaAgent (1.6.3):
+    - GzipSwift
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - instana_agent (from `.symlinks/plugins/instana_agent/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+
+SPEC REPOS:
+  trunk:
+    - GzipSwift
+    - InstanaAgent
+    - Toast
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  instana_agent:
+    :path: ".symlinks/plugins/instana_agent/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  fluttertoast: fafc4fa4d01a6a9e4f772ecd190ffa525e9e2d9c
+  GzipSwift: 893f3e48e597a1a4f62fafcb6514220fcf8287fa
+  instana_agent: e04a7be08a343fab9ed45cd0ee01d2b513949930
+  InstanaAgent: 4f4ec31427465bd91fdfedc81c4d8469ce781af3
+  shared_preferences_foundation: 5b919d13b803cadd15ed2dc053125c68730e5126
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
+
+COCOAPODS: 1.10.1
