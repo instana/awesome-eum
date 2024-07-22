@@ -13,6 +13,7 @@ A collection of awesome things regarding Instana EUM.
 
 - Websites
   - [eum-autoinstr-ra](/eum-autoinstr-ra) - Example website with a test backend API server (Nodejs) based on [React-admin CRM](https://github.com/marmelab/react-admin/tree/master/examples/crm).
+  - [ionic-example-app](/ionic-example-apps/ionic-example-app1/) - Example app created using [ionic](https://ionicframework.com/docs) framework to test weasel monitoring. 
 - Mobile Apps
   - [android-api-showcase](/android-api-showcase) - Example mobile application designed to showcase and test the capabilities of IBM Instana Android Agent and provide a comprehensive understanding of its functionality.
   - [flutter-api-showcase](/flutter-api-showcase) - Example mobile application designed to showcase and test the capabilities of IBM Instana Flutter Agent and provide a comprehensive understanding of its functionality.
