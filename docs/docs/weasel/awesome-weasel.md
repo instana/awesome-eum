@@ -49,12 +49,12 @@ IBM - Office of the CIO
 
 <img src="../imgs/showcase-ionic/home.png" alt="login"><br><br><img src="../imgs/showcase-ionic/cus.png" alt="login" ><br><br><img src="../imgs/showcase-ionic/errors.png" alt="login"><br><br><img src="../imgs/showcase-ionic/xhr.png">
 
-##### Applicaion Link //TODO::Replace link
+##### Applicaion Link
 
 You can download this application ☞
-<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/flutter-agent/tree/main/lib', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
+<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/awesome-eum/tree/master/ionic-example-apps/ionic-example-app1', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
 
-The Application repository ☞ <a href="https://github.com/instana/flutter-agent/tree/main/lib" target="_blank">here</a>.
+The Application repository ☞ <a href="https://github.com/instana/awesome-eum/tree/master/ionic-example-apps/ionic-example-app1" target="_blank">here</a>.
 
 ---
 

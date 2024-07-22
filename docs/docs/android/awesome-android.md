@@ -46,12 +46,12 @@ A Shopping application instrumented with <a href="https://github.com/instana/and
 
 <img src="../imgs/roboshop-android/init.png" alt="login" width="150" height="300"><img src="../imgs/roboshop-android/login.png" alt="login" width="150" height="300"><img src="../imgs/roboshop-android/settings.png" alt="login" width="150" height="300"><img src="../imgs/roboshop-android/dashboard.png" alt="login" width="150" height="300"><br><img src="../imgs/roboshop-android/product_detail.png" alt="login" width="150" height="300"><img src="../imgs/roboshop-android/cart.png" alt="login" width="150" height="300"><img src="../imgs/roboshop-android/coupon.png" alt="login" width="150" height="300"><img src="../imgs/roboshop-android/card.png" alt="login" width="150" height="300">
 
-##### Applicaion Link //TODO::Replace link
+##### Applicaion Link
 
 You can download this application ☞
-<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/flutter-agent/tree/main/lib', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
+<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/awesome-eum/tree/master/android-compose-robotshop', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
 
-The Application repository ☞ <a href="https://github.com/instana/flutter-agent/tree/main/lib" target="_blank">here</a>.
+The Application repository ☞ <a href="https://github.com/instana/awesome-eum/tree/master/android-compose-robotshop" target="_blank">here</a>.
 
 ---
 
@@ -92,12 +92,12 @@ For more information and detailed documentation, visit the <a href="https://www.
 
 <img src="../imgs/showcase-android/config_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-android/crash_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-android/credentials_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-android/profile_screen.png" alt="login" width="150" height="300"><br><img src="../imgs/showcase-android/custom_events_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-android/home_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-android/network_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-android/log_screen.png" alt="login" width="150" height="300">
 
-##### Applicaion Link TODO::Upldate link
+##### Applicaion Link
 
 You can download this application ☞
-<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/flutter-agent/tree/main/lib', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
+<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/awesome-eum/tree/master/android-api-showcase', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
 
-The Application repository ☞ <a href="https://github.com/instana/flutter-agent/tree/main/lib" target="_blank">here</a>.
+The Application repository ☞ <a href="https://github.com/instana/awesome-eum/tree/master/android-api-showcase" target="_blank">here</a>.
 
 
  ---
@@ -111,29 +111,29 @@ This app showcases the simplest use case of the Instana Android Agent in an Andr
 - Coroutines
 - OkHttp3
 
-##### Compiling (TODO:: replace links after host)
+##### Compiling
 
-Open [ExampleApp.kt](../../../android-crash/app/src/main/java/com/instana/android/example/ExampleApp.kt) and replace these two values with your own (obtained in your Instana Dashboard): 
+Open [ExampleApp.kt](https://github.com/instana/awesome-eum/blob/master/android-crash-user-consent/app/src/main/java/com/instana/android/example/ExampleApp.kt) and replace these two values with your own (obtained in your Instana Dashboard): 
 1. `REPORTING_URL`
 2. `KEY`
 
 Compile as usual using Android Studio 3.x
 
-##### Structure (TODO:: replace links after host)
+##### Structure
 
-- Instana dependencies in [project-level gradle.build](../../../android-crash/build.gradle)
-- Instana plugin and dependencies in [module-level gradle.build](../../../android-crash/app/build.gradle)
-- Minimal initialization of Instana Agent in [ExampleApp.kt](../../../android-crash/app/src/main/java/com/instana/android/example/ExampleApp.kt)
-- Set view name in `onResume()` in [MainActivity.kt](../../../android-crash/app/src/main/java/com/instana/android/example/MainActivity.kt)
+- Instana dependencies in [project-level gradle.build](https://github.com/instana/awesome-eum/blob/master/android-crash-user-consent/build.gradle)
+- Instana plugin and dependencies in [module-level gradle.build](https://github.com/instana/awesome-eum/blob/master/android-crash-user-consent/app/build.gradle)
+- Minimal initialization of Instana Agent in [ExampleApp.kt](https://github.com/instana/awesome-eum/blob/master/android-crash-user-consent/app/src/main/java/com/instana/android/example/ExampleApp.kt)
+- Set view name in `onResume()` in [MainActivity.kt](https://github.com/instana/awesome-eum/blob/master/android-crash-user-consent/app/src/main/java/com/instana/android/example/MainActivity.kt)
 - OkHttp3 and coroutines to execute a single query which Instana automatically tracks
 
 ##### Screenshots
 
 <img src="../imgs/crash-android/app-screenshot.png" alt="login" width="150" height="300">
 
-##### Applicaion Link TODO::Upldate link
+##### Applicaion Link
 
 You can download this application ☞
-<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/flutter-agent/tree/main/lib', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
+<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/awesome-eum/tree/master/android-crash-user-consent', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
 
-The Application repository ☞ <a href="https://github.com/instana/flutter-agent/tree/main/lib" target="_blank">here</a>.
+The Application repository ☞ <a href="https://github.com/instana/awesome-eum/tree/master/android-crash-user-consent" target="_blank">here</a>.

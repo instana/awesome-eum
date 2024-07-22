@@ -36,12 +36,12 @@ For more information and detailed documentation, visit the <a href="https://www.
 
 <img src="../imgs/showcase-flutter/all_at_once_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-flutter/credential_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-flutter/feature_listing.png" alt="login" width="150" height="300"><img src="../imgs/showcase-flutter/network_screen.png" alt="login" width="150" height="300"><img src="../imgs/showcase-flutter/profile_screen.png" alt="login" width="150" height="300">
 
-##### Applicaion Link TODO::Upldate link
+##### Applicaion Link
 
 You can download this application ☞
-<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/flutter-agent/tree/main/lib', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
+<button onclick="window.open('https://download-directory.github.io/?url=https://github.com/instana/awesome-eum/tree/master/flutter-api-showcase', '_blank')" style="background-color: #157878; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px;">Download Folder</button>
 
-The Application repository ☞ <a href="https://github.com/instana/flutter-agent/tree/main/lib" target="_blank">here</a>.
+The Application repository ☞ <a href="https://github.com/instana/awesome-eum/tree/master/flutter-api-showcase" target="_blank">here</a>.
 
 
  ---
