@@ -23,7 +23,6 @@ class App : Application(){
        if(dataManager.getString(INSTANA_KEY).isNotEmpty()&&dataManager.getString(INSTANA_URL).isNotEmpty()){
            setupInstana(dataManager.getString(INSTANA_KEY),dataManager.getString(INSTANA_URL))
        }
-        setupInstana("dataManager.getString(INSTANA_KEY)","dataManager.getString(INSTANA_URL)")
         if(dataManager.getString(Constants.CURRENT_API_VERSION).isNotEmpty()){
             CurrentVersionInUse = dataManager.getString(Constants.CURRENT_API_VERSION)
         }

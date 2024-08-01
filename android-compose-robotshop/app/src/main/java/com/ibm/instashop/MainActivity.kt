@@ -8,9 +8,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.rememberNavController
+import com.ibm.instashop.common.starttimehandler.LaunchTimeTracker
 import com.ibm.instashop.graphs.base_grapg.RootNavigationGraph
 import com.ibm.instashop.ui.theme.RobotShopTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -38,4 +40,7 @@ private fun ShowScreen(context: Context) {
     val navHostController = rememberNavController()
 
     RootNavigationGraph(navHostController = navHostController, context = context)
+    LaunchedEffect(Unit){
+        LaunchTimeTracker.stopTimer()
+    }
 }

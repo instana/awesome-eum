@@ -26,6 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name=".common.starttimehandler.StartupInitializer"
+            android:authorities="${applicationId}.instanaagentinitializer"
+            android:initOrder="2147483647"
+            android:exported="false" />
     </application>
 
 </manifest>
