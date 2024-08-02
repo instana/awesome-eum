@@ -20,9 +20,10 @@ class App : Application(){
     lateinit var dataManager: DataManager
     override fun onCreate() {
         super.onCreate()
-       if(dataManager.getString(INSTANA_KEY).isNotEmpty()&&dataManager.getString(INSTANA_URL).isNotEmpty()){
+        Thread.sleep(300)
+        if(dataManager.getString(INSTANA_KEY).isNotEmpty()&&dataManager.getString(INSTANA_URL).isNotEmpty()){
            setupInstana(dataManager.getString(INSTANA_KEY),dataManager.getString(INSTANA_URL))
-       }
+        }
         if(dataManager.getString(Constants.CURRENT_API_VERSION).isNotEmpty()){
             CurrentVersionInUse = dataManager.getString(Constants.CURRENT_API_VERSION)
         }
