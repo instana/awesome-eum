@@ -18,7 +18,7 @@
         <provider
             android:name=".common.starttimehandler.StartupInitializer"
             android:authorities="${applicationId}.appstartprovider"
-            android:initOrder="500"
+            android:initOrder="5000"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -31,7 +31,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <receiver android:name=".widget.RoboShopWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <!--Below code snippet is placed here to show that if you have any similar code in your manifest
+          Instana will throw error as Instana requires WorkManager to report beacons. If you uncomment below code,
+          error messages like "WorkManager is not initialized properly. You have explicitly disabled WorkManagerInitializer
+          in your manifest, have not manually called WorkManager"-->
+        <!--      <provider
+                  android:name="androidx.startup.InitializationProvider"
+                  android:authorities="${applicationId}.androidx-startup"
+                  android:exported="false"
+                  tools:node="merge">
+                  <meta-data
+                      android:name="androidx.work.WorkManagerInitializer"
+                      android:value="androidx.startup"
+                      tools:node="remove" />
+              </provider>-->
     </application>
 
 </manifest>

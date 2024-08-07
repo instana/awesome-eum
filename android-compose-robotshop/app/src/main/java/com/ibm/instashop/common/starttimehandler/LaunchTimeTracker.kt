@@ -2,6 +2,7 @@ package com.ibm.instashop.common.starttimehandler
 
 import android.os.SystemClock
 import android.util.Log
+import com.ibm.instashop.MainActivity
 import com.instana.android.CustomEvent
 import com.instana.android.Instana
 
@@ -21,6 +22,7 @@ object LaunchTimeTracker{
         }
         launchTimeInNanos = SystemClock.elapsedRealtime() - this.initialTimeInNanos;
         Instana.reportEvent(CustomEvent("APP_START_TIMINGS").apply {
+            viewName = MainActivity::class.java.toString()
             duration = launchTimeInNanos
             meta = mapOf(
                 "APP_START_LOAD_TIME_DURATION" to (launchTimeInNanos).toString()+"ms",
