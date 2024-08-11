@@ -70,6 +70,8 @@ dependencies {
     implementation(libs.retrofit.gson.converter)
     implementation(libs.retrofit.core)
     implementation(libs.coil.compose)
+    implementation(libs.glide)
+    implementation(libs.work.manager)
     implementation(libs.accompanist.pager)
     testImplementation(libs.junit)
     implementation(libs.constraintlayout.compose)
