@@ -16,4 +16,4 @@ Instructions
 Result
 ------------
 
-You'll notice that `ibmkony`, the custom library where Instana is integrated, can monitor the application using the bridge provided at the library level. The only change in application level is applying teh plugin.
+You'll notice that `ibmkony`, the custom library where Instana is integrated, can monitor the application using the bridge provided at the library level. The only change in application level is applying the plugin.
