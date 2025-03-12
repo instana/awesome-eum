@@ -20,6 +20,7 @@ A collection of awesome things regarding Instana EUM.
   - [android-crash](/android-crash) - Example mobile application designed to showcase crash collection using Instana Android Agent.
   - [android-crash-user-consent](/android-crash-user-consent) - Example mobile application designed to showcase crash collection using Instana Android Agent with user consent.
   - [android-lib-injection-plugin](/android-lib-injection-plugin) - A Sample application to showcase that Instana android agent plugin is injectable at library level.
+  - [dotnet-maui-instana-integration](/dotnet-maui-instana-integration) - A sample application built with .NET MAUI, integrating APIs with native Android and iOS libraries.
   - [android-compose-robotshop](/android-compose-robotshop) - A Shopping application clone with fakestore apis, Instrumented with instsna having version catelog based dependecy gradles. 
   Features : 
     - Calculate revenuew in a period of time with custom metric

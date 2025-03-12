@@ -20,3 +20,9 @@
 .build
 
 /.build
+
+dotnet-maui-instana-integration/android/native/newbinding/build
+dotnet-maui-instana-integration/android/NewBinding.Android.Binding/bin
+dotnet-maui-instana-integration/android/NewBinding.Android.Binding/obj
+dotnet-maui-instana-integration/macios/NewBinding.MaciOS.Binding/bin
+dotnet-maui-instana-integration/macios/NewBinding.MaciOS.Binding/obj

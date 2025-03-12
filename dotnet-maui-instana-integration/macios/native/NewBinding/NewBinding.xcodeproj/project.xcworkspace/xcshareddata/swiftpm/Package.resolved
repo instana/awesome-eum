@@ -1,0 +1,24 @@
+{
+  "originHash" : "babc7a6f727b3e9155874ce4254a28790ab539c03d53761f70072277a02f29a2",
+  "pins" : [
+    {
+      "identity" : "gzipswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1024jp/GzipSwift.git",
+      "state" : {
+        "revision" : "56bf51fdd2fe4b2cf254b2cf34aede3d7caccc6c",
+        "version" : "6.1.0"
+      }
+    },
+    {
+      "identity" : "iosagent",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/instana/iOSAgent",
+      "state" : {
+        "revision" : "93c4e46fa1c9cd3c5133175a12594b2c562a0cb1",
+        "version" : "1.8.9"
+      }
+    }
+  ],
+  "version" : 3
+}
