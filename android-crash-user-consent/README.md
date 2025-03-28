@@ -10,28 +10,28 @@ The crash generated in the example app is reported and can be seen in the dashbo
 
 Before generating crash a dialog box appears for user consent:
 
-<img width="300" alt="Instana Android Agent example" src="https://media.github.ibm.com/user/423583/files/9f519ffb-1e8b-45ab-9dfc-a82fac8a70fa">
+<img width="300" alt="Instana Android Agent example" src="images/Before generating crash a dialog box appears for user consent.png">
 
 If yes is tapped then the alert box appears as shown below
 
-<img width="300" alt="Instana Android Agent example" src="https://media.github.ibm.com/user/423583/files/52f235d4-c36c-4f70-94f2-88de2ef8c9a1">
+<img width="300" alt="Instana Android Agent example" src="images/If yes is tapped then the alert box appears as shown below.png">
 
 Two options are available:
 
-<img width="300" alt="Instana Android Agent example" src="https://media.github.ibm.com/user/423583/files/138c3e09-7de0-48f5-a0c7-af528e0c9935">
+<img width="300" alt="Instana Android Agent example" src="images/Two options are available-.png">
 
 When generate crash button is clicked the app crashes:
 
-<img width="300" alt="Instana Android Agent example" src="https://media.github.ibm.com/user/423583/files/8943890f-1685-41fb-967c-9edd4431d797">
+<img width="300" alt="Instana Android Agent example" src="images/When generate crash button is clicked the app crashes-.png">
 
 After the first launch, if the app is launched again and
 if yes was tapped in the first launch then it will displayed as shown below
 
-<img width="300" alt="Instana Android Agent example" src="https://media.github.ibm.com/user/423583/files/9222b4fa-d3f2-49a0-b96a-278e01b7f6fd">
+<img width="300" alt="Instana Android Agent example" src="images/After the first launch, if the app is launched again and.png">
 
 if no was tapped in the first launch then the generate crash button will be disabled as shown  below
 
-<img width="300" alt="Screenshot 2023-07-26 at 4 03 09 PM" src="https://media.github.ibm.com/user/423583/files/965d4241-926d-4954-b3d1-5e385791002d">
+<img width="300" alt="Screenshot 2023-07-26 at 4 03 09 PM" src="images/if no was tapped in the first launch then the generate crash .png">
 
 ## Compiling
 

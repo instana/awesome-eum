@@ -3,11 +3,11 @@ A collection of awesome things regarding Instana EUM.
 
 ## Monitoring Agents
 
-- weasel - [Internal](https://github.ibm.com/instana/weasel), [External](https://github.com/instana/weasel)
-- android-agent - [Internal](https://github.ibm.com/instana/android-agent), [External](https://github.com/instana/android-agent)
-- iOSAgent - [Internal](https://github.ibm.com/instana/iOSAgent), [External](https://github.com/instana/iOSAgent)
-- flutter-agent - [Internal](https://github.ibm.com/instana/flutter-agent), [External](https://github.com/instana/flutter-agent)
-- react-native-agent - [Internal](https://github.ibm.com/instana/react-native-agent), [External](https://github.com/instana/react-native-agent)
+- weasel - [External](https://github.com/instana/weasel)
+- android-agent - [External](https://github.com/instana/android-agent)
+- iOSAgent -  [External](https://github.com/instana/iOSAgent)
+- flutter-agent -  [External](https://github.com/instana/flutter-agent)
+- react-native-agent -  [External](https://github.com/instana/react-native-agent)
 
 ## Awesome!
 
