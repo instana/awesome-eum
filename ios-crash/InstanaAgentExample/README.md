@@ -8,7 +8,7 @@ This is a test app for iosAgent framework testing.
 
 ## Compiling
 
-Open [Config.swift](InstanaAgentExample/Config.swift) and replace these two values with your own (obtained in your Instana Dashboard): 
+Open [Config.swift](./Config.swift) and replace these two values with your own (obtained in your Instana Dashboard): 
 1. `INSTANA_REPORTING_KEY`
 2. `INSTANA_REPORTING_URL`
 
@@ -19,4 +19,4 @@ To send a crash:
 - Navigate to the 'JSON' tab. 
 - Click the '+' icon to generate a crash.
 
-<img src="./../images/iosCrash.png" alt="Instana Android Agent example" width="300">
+<img src="./../images/iosCrash.png" alt="Instana iOS Agent example" width="300">
