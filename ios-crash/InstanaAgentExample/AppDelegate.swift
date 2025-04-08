@@ -13,16 +13,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?   // needed on iOS 12 or lower
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let myLog = OSLog(subsystem: "com.instana.ios.InstanaAgentExample", category: "Instana")
+
         // App needs to explicitly get user consent for metric events subscription before catching crash payloads.
         let userYes = Instana.canSubscribeCrashReporting() &&
             (UserDefaults.standard.integer(forKey: metricSubscriptionKey) == metricSubscriptionFlagYes)
 
+        let queryTrackedDomainList: [NSRegularExpression] = [
+            try! NSRegularExpression(pattern: "https://www.ibm.com")
+        ]
+
         let options = InstanaSetupOptions(enableCrashReporting: userYes)
 //        options.slowSendInterval = 60.0
+        options.autoCaptureScreenNames = true
+//        options.debugAllScreenNames = true
+        options.queryTrackedDomainList = queryTrackedDomainList
+//        options.dropBeaconReporting = true
+//        options.rateLimits = .MID_LIMITS
+//        options.trustDeviceTiming = true
+//        options.perfConfig = InstanaPerformanceConfig(enableAnrReport: true, anrThreshold: 5.0, enableLowMemoryReport: true)
         if !Instana.setup(key: InstanaKey, reportingURL: InstanaURL, options: options) {
-            let myLog = OSLog(subsystem: "com.instana.ios.InstanaAgentExample", category: "Instana")
             os_log("Instana setup failed", log: myLog, type: .error)
         }
+
+        let headerFilterReg = try! NSRegularExpression(pattern: "Content-Type", options: .caseInsensitive)
+        Instana.setCaptureHeaders(matching: [headerFilterReg])
+
         return true
     }
 

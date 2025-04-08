@@ -15,19 +15,24 @@ class ImageViewViewController: UIViewController {
         
     lazy var imageView = UIImageView()
     lazy var session = { URLSession(configuration: URLSessionConfiguration.default) }()
+
+    @available(iOS 13.0, *)
     private var publisher: AnyCancellable?
+
     private var timer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        self.navigationItem.title = "ImageView navigationItem Title 1"
+
         view.backgroundColor = .white
         view.addSubview(imageView)
         imageView.contentMode = .scaleAspectFill
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            imageView.trailingAnchor.constrain(equalTo: view.trailingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -41,7 +46,7 @@ class ImageViewViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        Instana.setView(name: "ImageView")
+//        Instana.setView(name: "ImageView")
         Instana.setMeta(value: "iOS", key: "OS")
     }
 
@@ -55,11 +60,25 @@ class ImageViewViewController: UIViewController {
     }
 
     func downloadViaCombine(_ url: URL) {
-        publisher = session.dataTaskPublisher(for: url)
-            .receive(on: RunLoop.main)
-            .map { UIImage(data: $0.data) }
-            .replaceError(with: UIImage())
-            .assign(to: \.image, on: self.imageView)
+        if #available(iOS 13.0, *) {
+            publisher = session.dataTaskPublisher(for: url)
+                .receive(on: RunLoop.main)
+                .map { UIImage(data: $0.data) }
+                .replaceError(with: UIImage())
+                .assign(to: \.image, on: self.imageView)
+        } else {
+            let task = session.dataTask(with: url) { data, response, error in
+                guard let data = data else {
+                    print("Empty data. error: ", error ?? "nil")
+                    return
+                }
+                let image = UIImage(data: data)
+                DispatchQueue.main.async {
+                    self.imageView.image = image
+                }
+            }
+            task.resume()
+        }
     }
 
     func downloadWViaAFN(_ url: URL) {
