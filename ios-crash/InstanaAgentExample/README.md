@@ -19,4 +19,4 @@ To send a crash:
 - Navigate to the 'JSON' tab. 
 - Click the '+' icon to generate a crash.
 
-<img src="./../images/iosCrash.png" alt="Instana iOS Agent example" width="300">
+<img src="./../images/iOSCrash.png" alt="Instana iOS Agent example" width="300">
