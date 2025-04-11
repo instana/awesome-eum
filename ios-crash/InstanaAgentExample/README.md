@@ -23,6 +23,6 @@ To send a crash:
 - Click the '+' icon to generate a crash.
 - A consent popup will appear on the screen. Click on 'Yes' to give permission for the crash data to be collected. 
 
-<img src="./../images/iOSCrash.png" alt="Instana iOS Agent example" width="300">
+<img src="../images/crashIOS.png" alt="Instana iOS Agent example" width="300">
 
 - The crash details can be seen in your Instana Mobile Application Dashboard. For more information read [Crash Analysis](https://www.ibm.com/docs/en/instana-observability/1.0.288?topic=applications-crash-analysis).
