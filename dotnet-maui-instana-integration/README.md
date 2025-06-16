@@ -64,7 +64,7 @@ Now, you are ready to run the sample application.
 
 - **Official support for MAUI** will be available once the corresponding NuGet package is published by our team.
 - **Customers should not create Instana official support tickets** based on this repository.
-- For any questions, issues, or suggestions related to this example, please use the **[Issues](../../awesome-eum/issues)** section of this GitHub repository.
+- For any questions, issues, or suggestions related to this example, please use the **[Issues](https://github.com/instana/awesome-eum/issues)** section of this GitHub repository.
 
 
  
