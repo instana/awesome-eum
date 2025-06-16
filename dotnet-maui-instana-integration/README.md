@@ -57,6 +57,16 @@ Now, you are ready to run the sample application.
  - On iOS, some library calls may not be auto-captured when API calls are made with browser-based requests. However, all other network requests will be auto-collected.
  - Crash collection is not supported as background services are not active after a crash.
 
+ ### 📌 Special Note
+
+> ⚠️ **This repository is provided as an example and workaround for MAUI support.**  
+> It is **not an official solution** and is intended for **demonstration purposes only** until official MAUI support is released via the NuGet package.
+
+- **Official support for MAUI** will be available once the corresponding NuGet package is published by our team.
+- **Customers should not create Instana official support tickets** based on this repository.
+- For any questions, issues, or suggestions related to this example, please use the **[Issues](../../issues)** section of this GitHub repository.
+
+
  
  Happy coding, and may your apps be faster and more reliable than ever before! 🚀
 Instana is committed to continuously improving this integration. As more stable solutions become available, we’ll keep you updated and release them on NuGet. Stay tuned for a more polished, foolproof experience!
